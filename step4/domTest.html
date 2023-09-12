@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="hello" style="width:100px;height: 100px; background-color: black">
+    </div>
+    <button onclick="changeRed()">빨강</button>
+    <button onclick="changeBlue()">파랑</button>
+</body>
+<script>
+    const box = document.getElementById("hello");
+
+    function changeRed() {
+        box.style.backgroundColor = "red";
+    }
+
+    function changeBlue() {
+        box.style.backgroundColor = "blue";
+    }
+</script>
+</html>

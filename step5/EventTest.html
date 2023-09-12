@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="hello" style="width:100px;height: 100px; background-color: black">
+    </div>
+</body>
+<script>
+    const box = document.getElementById("hello");
+    box.addEventListener("click", changeRed);
+    box.addEventListener("dblclick", () => {
+        box.style.backgroundColor = "blue";
+    })
+    function changeRed() {
+        box.style.backgroundColor = "red";
+    }
+</script>
+</html>
