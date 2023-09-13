@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<img src="아린.webp" id="omy" onclick="change()" alt=""/>
+</body>
+<script>
+    const members = ["미미", "승희", "아린", "유빈", "유아", "효정"]
+    function change() {
+        var member;
+        while (member == null) {
+            var inp = prompt("맴버명을 입력하시오");
+            if(!members.includes(inp)) {
+                alert("잘못 입력했습니다.");
+                continue;
+            }
+            member = inp;
+        }
+
+        document.getElementById("omy").src = member + ".webp"
+    }
+</script>
+</html>

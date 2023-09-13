@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="아린.webp" id="omy" alt=""/>
+</body>
+<script>
+    var seconds = new Date().getSeconds();
+    const members = ["미미", "승희", "아린", "유빈", "유아", "효정"];
+
+    document.getElementById("omy").src = members[seconds%6] + ".webp"
+
+</script>
+</html>
